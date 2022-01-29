@@ -11,10 +11,7 @@ function apiNasa() {
     $.ajax({
         url: `https://api.nasa.gov/planetary/apod?api_key=${chaveNasa}&date=${dataEscolhida}`,
         success: function (r) {
-            console.log(r);
-            console.log(r.date);
-            console.log(r.title);
-            console.log(r.explanation);
+            mostraDados(r.title, r.url, r.explanation);
         },
         error: function () {
             alert('Ocorreu um erro! Selecione uma data e tente novamente');
@@ -22,3 +19,14 @@ function apiNasa() {
     });
 }
 
+function mostraDados(titulo,urlImg,explicacao){
+    const campoDados = $('.dados');
+    const img = `<img src="${urlImg}" alt="imagemNasa">`;
+    
+    const linha = '<h3>' + titulo + '</h3>' +
+                  img + 
+                  '<p>' + explicacao + '</p>';
+
+    campoDados.append(linha);
+    
+}
