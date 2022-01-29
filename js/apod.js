@@ -10,10 +10,15 @@ function apiNasa() {
 
     $.ajax({
         url: `https://api.nasa.gov/planetary/apod?api_key=${chaveNasa}&date=${dataEscolhida}`,
-        //    url: 'https://pokeapi.co/api/v2/pokemon/ditto',
         success: function (r) {
-            console.log(r)
-        }
+            console.log(r);
+            console.log(r.date);
+            console.log(r.title);
+            console.log(r.explanation);
+        },
+        error: function () {
+            alert('Ocorreu um erro! Selecione uma data e tente novamente');
+          }
     });
 }
 
