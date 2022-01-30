@@ -4,7 +4,6 @@ body{
     margin: 0;
     margin-bottom: 3%;
     background-image: url("../img/outerspace-70.gif");
-
 }
 
 header{
@@ -38,6 +37,7 @@ main{
     background-color: rgba(0, 0, 0, 0.548);
     color: white;
     font-size: large;
+    text-align: center;
 }
 
 .titulo h2{
@@ -54,17 +54,18 @@ main{
     display:flex;
     align-items: center;
     width: 30vw;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 3%;
 }
 
 #data{
     font-family: 'Roboto', sans-serif;
     font-size: large;
+    text-align: center;
 }
 
 #submit{
-    width: 8vw;
+    width: 10vw;   
     font-family: 'Roboto', sans-serif;
     font-size: large;
     background-color: rgba(10, 100, 128, 0.692);
@@ -79,7 +80,7 @@ main{
 
 #submit:active{
     background-color: #3db0c6;
-    color: #0c5461;
+    color: #043741;
     transition: 200ms;
 }
 .dados{
@@ -95,3 +96,37 @@ img{
     width: 50vw;
 }
 
+
+@media (max-width:1200px){
+    .container{
+        width: 80vw;
+    }
+
+    .calendarioBtn{
+        flex-direction: column;
+        height: 12vh;
+        justify-content: space-around;
+        align-items: center;
+        width: fit-content;
+    }
+
+    #submit{
+        width: 20vw;
+    }
+}
+
+@media (max-width:700px){
+    .container{
+        font-size: medium;
+        background-color: #3dafc61e;
+    }
+
+
+    #data{
+        font-size: medium;
+    }
+
+    #submit{
+        width: 50vw;
+    }
+}
