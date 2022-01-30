@@ -1,24 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
     margin: 0;
     margin-bottom: 3%;
+    background-image: url("../img/outerspace-70.gif");
+
 }
 
 header{
-    background-color: black;
+    background-color: #0c5461a6;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 header h1 {
     text-align: center;
     margin-bottom: 3%;
     margin-top: 0;
-    padding: 2%;
-    color: white;
+    padding: 2% 0;
+    color: #91e7f7;
 }
 
 main{
     display: flex;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -26,13 +32,17 @@ main{
     align-items: center;
     flex-direction: column;
     width: 60%;
-    border: 2px black solid;
-    border-radius: 30px;
     padding: 2%;
+    border: 2px black ;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+    font-size: large;
 }
 
 .titulo h2{
     text-align: center;
+    font-size: xx-large;
 }
 
 .campoData{
@@ -48,10 +58,30 @@ main{
     margin-top: 3%;
 }
 
-#submit{
-    width: 8vw;
+#data{
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
 }
 
+#submit{
+    width: 8vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    background-color: rgba(10, 100, 128, 0.692);
+    color:white;
+    border-radius: 3px;
+}
+
+#submit:hover{
+    font-size: x-large;
+    transition: 500ms;
+}
+
+#submit:active{
+    background-color: #3db0c6;
+    color: #0c5461;
+    transition: 200ms;
+}
 .dados{
     display: flex;
     align-items: center;
