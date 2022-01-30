@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+header{
+    background-color: black;
+    margin: 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 0;
+    padding: 2%;
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    border: 2px black solid;
+    border-radius: 30px;
+    padding: 2%;
+}
+
+.titulo h2{
+    text-align: center;
+}
+
+.campoData{
+    text-align: center;
+}
+
+
+.calendarioBtn{
+    display:flex;
+    align-items: center;
+    width: 30vw;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+#submit{
+    width: 8vw;
+}
+
+.dados{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+}
+
+img{
+    padding: 3%;
+    width: 50vw;
+}
+

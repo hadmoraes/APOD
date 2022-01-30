@@ -23,6 +23,7 @@ function mostraDados(titulo,urlImg,explicacao){
     const campoDados = $('.dados');
     const img = `<img src="${urlImg}" alt="imagemNasa">`;
     
+    
     const linha = '<h3>' + titulo + '</h3>' +
                   img + 
                   '<p>' + explicacao + '</p>';
