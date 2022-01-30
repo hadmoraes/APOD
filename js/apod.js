@@ -1,10 +1,11 @@
 $('#submit').click(function (event) {
     event.preventDefault();
-    apiNasa();
+    $('.dados').empty();
+    chamaApi();
 });
 
 
-function apiNasa() {
+function chamaApi() {
     const chaveNasa = 'XXZ6XHRbgijrqIf0dHbRo1Ga4leU8wQMfXvRX719';
     const dataEscolhida = $('#data').val();
 
@@ -19,9 +20,9 @@ function apiNasa() {
     });
 }
 
-function mostraDados(titulo,urlImg,explicacao){
+function mostraDados(titulo,url,explicacao){
     const campoDados = $('.dados');
-    const img = `<img src="${urlImg}" alt="imagemNasa">`;
+    const img = `<img src="${url}" alt="imagemNasa">`;
     
     
     const linha = '<h3>' + titulo + '</h3>' +
