@@ -3,27 +3,32 @@
 body{
     margin: 0;
     margin-bottom: 3%;
-    background-image: url("../img/outerspace-70.gif");
+    background-image: url("../img/galaxy2.png");
+}
+
+body *{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: large;
 }
 
 header{
     background-color: #0c5461a6;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+
 }
 
 header h1 {
-    text-align: center;
     margin-bottom: 3%;
     margin-top: 0;
     padding: 2% 0;
     color: #91e7f7;
+    font-size: xx-large;
 }
 
 main{
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -36,17 +41,11 @@ main{
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.548);
     color: white;
-    font-size: large;
-    text-align: center;
 }
 
 .titulo h2{
     text-align: center;
     font-size: xx-large;
-}
-
-.campoData{
-    text-align: center;
 }
 
 
@@ -58,16 +57,10 @@ main{
     margin-top: 3%;
 }
 
-#data{
-    font-family: 'Roboto', sans-serif;
-    font-size: large;
-    text-align: center;
-}
 
 #submit{
     width: 10vw;   
     font-family: 'Roboto', sans-serif;
-    font-size: large;
     background-color: rgba(10, 100, 128, 0.692);
     color:white;
     border-radius: 3px;
@@ -116,13 +109,9 @@ img{
 }
 
 @media (max-width:700px){
-    .container{
-        font-size: medium;
-        background-color: #3dafc61e;
-    }
 
 
-    #data{
+    .container *{
         font-size: medium;
     }
 
