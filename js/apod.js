@@ -38,10 +38,9 @@ function defineMidia(url){
     let midiaHtml;
     if(midiatype == 'youtube'){
         midiaHtml = `<iframe src="${url}">`;
-        document.write(midiaHtml)
     } else{
         midiaHtml = `<img src="${url}" alt="imagemNasa">`;
-        document.write(midiaHtml)
+
     }
     return midiaHtml
 }
