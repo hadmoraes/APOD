@@ -94,9 +94,11 @@ img{
 
 iframe{
     width: 50vw;
-    height: 40vh;
-    margin-bottom: 10%;
+    height: 45vh;
+    margin-bottom: 5%;
 }
+
+
 
 @media (max-width:1200px){
     .container{
@@ -116,7 +118,7 @@ iframe{
     }
 
     iframe{
-        width: 60vw;
+        width: 70vw;
         height: 35vh;
     }
     
@@ -148,3 +150,4 @@ iframe{
         height: 20vh;
     }
 }
+
