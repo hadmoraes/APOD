@@ -22,13 +22,26 @@ function chamaApi() {
 
 function mostraDados(titulo,url,explicacao){
     const campoDados = $('.dados');
-    const img = `<img src="${url}" alt="imagemNasa">`;
+    const midia = defineMidia(url);
     
     
     const linha = '<h3>' + titulo + '</h3>' +
-                  img + 
+                  midia + 
                   '<p>' + explicacao + '</p>';
 
     campoDados.append(linha);
     
+}
+
+function defineMidia(url){
+    const midiatype = url.split('.')[1];
+    let midiaHtml;
+    if(midiatype == 'youtube'){
+        midiaHtml = `<iframe src="${url}">`;
+        document.write(midiaHtml)
+    } else{
+        midiaHtml = `<img src="${url}" alt="imagemNasa">`;
+        document.write(midiaHtml)
+    }
+    return midiaHtml
 }

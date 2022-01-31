@@ -14,15 +14,12 @@ body *{
 
 header{
     background-color: #0c5461a6;
-    margin: 0;
-
-}
-
-header h1 {
-    margin-bottom: 3%;
-    margin-top: 0;
+    margin: 0 0 3% 0;
     padding: 2% 0;
     color: #91e7f7;
+}
+
+header h1{
     font-size: xx-large;
 }
 
@@ -109,7 +106,13 @@ img{
 }
 
 @media (max-width:700px){
+    header h1 {
+        font-size:  x-large;
+    }
 
+    .titulo h2{
+        font-size: large;
+    }
 
     .container *{
         font-size: medium;
