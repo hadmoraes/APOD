@@ -11,7 +11,7 @@
   - A aplicação deve, obrigatoriamente, ter um repositório no Github, estar disponível em uma Githubpage e utilizar jQuery.
 
 
-<img src="./img/home.png" alt="imagem da tela do página home do projeto">
+<img src=".\img\home.png" alt="imagem da tela do página home do projeto">
 
 <br>
 
