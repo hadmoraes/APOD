@@ -15,7 +15,7 @@
 
 <br>
 
-> ## Softwares & Ferramentas utilizadas nesse projeto 
+> ## Softwares e Ferramentas utilizadas nesse projeto 
 
   - HTML5
   - CSS3
